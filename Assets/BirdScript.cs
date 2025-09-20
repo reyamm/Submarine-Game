@@ -2,16 +2,22 @@ using UnityEngine;
 
 public class BirdScript : MonoBehaviour
 {
+public Rigidbody2D myRigidbody;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public Rigidbody2D myRigidbody;
+   public float jumpForce = 7f;      // how strong the jump is
+    private Rigidbody2D rb;
+
     void Start()
     {
-    
+        rb = GetComponent<Rigidbody2D>();   // get the Rigidbody2D from the object
     }
 
-    // Update is called once per frame
     void Update()
     {
-        myRigidbody.linearVelocity = Vector2.up * 10;
+        if (Input.GetKeyDown(KeyCode.Space))   // when space is pressed
+        {
+            rb.linearVelocity = Vector2.up * jumpForce;  // make it fly upward
+        }
     }
 }
