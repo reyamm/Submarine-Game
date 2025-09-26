@@ -57,7 +57,5 @@ Both influences merge into a whimsical, underwater arcade game experience.
 
 ---
 
-## License  
-This project is released under the MIT License.  
 
 *Disclaimer: Beatles songs, characters, and imagery are used here only as artistic inspiration; no copyrighted material is included.*  
